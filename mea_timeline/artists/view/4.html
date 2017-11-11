@@ -1,0 +1,119 @@
+<br />
+<b>Warning</b>:  SplFileInfo::openFile(/home/joshmatz/public_html/mea_timeline/app/tmp/cache/persistent/cake_core_file_map) [<a href='splfileinfo.openfile.html'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in <b>/home/joshmatz/public_html/mea_timeline/lib/Cake/Cache/Engine/FileEngine.php</b> on line <b>292</b><br />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<title>
+		CakePHP: the rapid development php framework:
+		Errors	</title>
+	<link href="../../favicon.ico" type="image/x-icon" rel="icon" /><link href="../../favicon.ico" type="image/x-icon" rel="shortcut icon" /><link rel="stylesheet" type="text/css" href="../../css/cake.generic.css" /></head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1><a href="http://cakephp.org">CakePHP: the rapid development php framework</a></h1>
+		</div>
+		<div id="content">
+
+			
+			<h2>Invalid artist</h2>
+<p class="error">
+	<strong>Error: </strong>
+	The requested address <strong>'/mea_timeline/artists/view/4'</strong> was not found on this server.</p>
+<h4>Stack Trace</h4>
+<pre>
+#0 [internal function]: ArtistsController->view('4')
+#1 /home/joshmatz/public_html/mea_timeline/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ArtistsController), Array)
+#2 /home/joshmatz/public_html/mea_timeline/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/joshmatz/public_html/mea_timeline/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ArtistsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/joshmatz/public_html/mea_timeline/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}</pre>
+
+		</div>
+		<div id="footer">
+			<a href="http://www.cakephp.org/" target="_blank"><img src="../../img/cake.power.gif" alt="CakePHP: the rapid development php framework" border="0" /></a>		</div>
+	</div>
+	<table class="cake-sql-log" id="cakeSqlLog_15104157885a071dac779781_45623622" summary="Cake SQL Log" cellspacing="0" border = "0"><caption>(default) 1 query took 0 ms</caption>	<thead>
+		<tr><th>Nr</th><th>Query</th><th>Error</th><th>Affected</th><th>Num. rows</th><th>Took (ms)</th></tr>
+	</thead>
+	<tbody>
+	<tr><td>1</td><td>SELECT COUNT(*) AS `count` FROM `artists` AS `Artist`   WHERE `Artist`.`id` = 4</td><td></td><td style = "text-align: right">1</td><td style = "text-align: right">1</td><td style = "text-align: right">0</td></tr>
+	</tbody></table>
+	</body>
+</html><pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5a071dac7812b-trace').style.display = (document.getElementById('cakeErr5a071dac7812b-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (512)</a>: SplFileInfo::openFile(/home/joshmatz/public_html/mea_timeline/app/tmp/cache/persistent/cake_core_file_map) [<a href='splfileinfo.openfile.html'>splfileinfo.openfile</a>]: failed to open stream: Permission denied [<b>CORE/Cake/Cache/Engine/FileEngine.php</b>, line <b>292</b>]<div id="cakeErr5a071dac7812b-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5a071dac7812b-code').style.display = (document.getElementById('cakeErr5a071dac7812b-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5a071dac7812b-context').style.display = (document.getElementById('cakeErr5a071dac7812b-context').style.display == 'none' ? '' : 'none')">Context</a><pre id="cakeErr5a071dac7812b-code" class="cake-code-dump" style="display: none;"><code><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;_File&nbsp;=&nbsp;$path-&gt;openFile('c+');</span></code>
+<code><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(Exception&nbsp;$e)&nbsp;{</span></code>
+<span class="code-highlight"><code><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trigger_error($e-&gt;getMessage(),&nbsp;E_USER_WARNING);</span></code></span></pre><pre id="cakeErr5a071dac7812b-context" class="cake-context" style="display: none;">$key	=	"cake_core_file_map"
+$createKey	=	true
+$path	=	SplFileInfo
+
+$exists	=	true
+$e	=	RuntimeException
+RuntimeException::$severity = 2</pre><pre class="stack-trace">FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 292
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 106
+Cache::write() - CORE/Cake/Cache/Cache.php, line 299
+App::shutdown() - CORE/Cake/Core/App.php, line 871
+[main] - [internal], line ??</pre></div></pre><pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5a071dac7887f-trace').style.display = (document.getElementById('cakeErr5a071dac7887f-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (512)</a>: _cake_core_ cache was unable to write 'file_map' to File cache [<b>CORE/Cake/Cache/Cache.php</b>, line <b>310</b>]<div id="cakeErr5a071dac7887f-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5a071dac7887f-code').style.display = (document.getElementById('cakeErr5a071dac7887f-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5a071dac7887f-context').style.display = (document.getElementById('cakeErr5a071dac7887f-context').style.display == 'none' ? '' : 'none')">Context</a><pre id="cakeErr5a071dac7887f-code" class="cake-code-dump" style="display: none;"><code><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),</span></code>
+<code><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E_USER_WARNING</span></code>
+<span class="code-highlight"><code><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</span></code></span></pre><pre id="cakeErr5a071dac7887f-context" class="cake-context" style="display: none;">$key	=	"file_map"
+$value	=	array(
+	"Configure" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Core/Configure.php",
+	"Cache" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Cache/Cache.php",
+	"FileEngine" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Cache/Engine/FileEngine.php",
+	"Inflector" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Utility/Inflector.php",
+	"ErrorHandler" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Error/ErrorHandler.php",
+	"Dispatcher" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Routing/Dispatcher.php",
+	"CakeRequest" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Network/CakeRequest.php",
+	"CakeResponse" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Network/CakeResponse.php",
+	"Router" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Routing/Router.php",
+	"CakeRoute" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Routing/Route/CakeRoute.php",
+	"CakePlugin" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Core/CakePlugin.php",
+	"ArtistsController" => "/home/joshmatz/public_html/mea_timeline/app/Controller/ArtistsController.php",
+	"AppController" => "/home/joshmatz/public_html/mea_timeline/app/Controller/AppController.php",
+	"Controller" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Controller/Controller.php",
+	"Object" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Core/Object.php",
+	"ComponentCollection" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Controller/ComponentCollection.php",
+	"ObjectCollection" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Utility/ObjectCollection.php",
+	"Set" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Utility/Set.php",
+	"AuthComponent" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Controller/Component/AuthComponent.php",
+	"Component" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Controller/Component.php",
+	"SessionComponent" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Controller/Component/SessionComponent.php",
+	"Debugger" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Utility/Debugger.php",
+	"I18n" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/I18n/I18n.php",
+	"L10n" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/I18n/L10n.php",
+	"ClassRegistry" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Utility/ClassRegistry.php",
+	"Artist" => "/home/joshmatz/public_html/mea_timeline/app/Model/Artist.php",
+	"AppModel" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Model/AppModel.php",
+	"Model" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Model/Model.php",
+	"BehaviorCollection" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Model/BehaviorCollection.php",
+	"ConnectionManager" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Model/ConnectionManager.php",
+	"Mysql" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Model/Datasource/Database/Mysql.php",
+	"DboSource" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Model/Datasource/DboSource.php",
+	"DataSource" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Model/Datasource/DataSource.php",
+	"CakeLog" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Log/CakeLog.php",
+	"FileLog" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Log/Engine/FileLog.php",
+	"CakeLogInterface" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Log/CakeLogInterface.php",
+	"ExceptionRenderer" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Error/ExceptionRenderer.php",
+	"CakeErrorController" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Controller/CakeErrorController.php",
+	"View" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/View/View.php",
+	"HelperCollection" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/View/HelperCollection.php",
+	"SessionHelper" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/View/Helper/SessionHelper.php",
+	"AppHelper" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/View/Helper/AppHelper.php",
+	"Helper" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/View/Helper.php",
+	"HtmlHelper" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/View/Helper/HtmlHelper.php",
+	"FormHelper" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/View/Helper/FormHelper.php",
+	"CakeSession" => "/home/joshmatz/public_html/mea_timeline/lib/Cake/Model/Datasource/CakeSession.php"
+)
+$config	=	"_cake_core_"
+$settings	=	array(
+	"prefix" => "*****",
+	"duration" => 10,
+	"probability" => 100,
+	"engine" => "File",
+	"path" => "/home/joshmatz/public_html/mea_timeline/app/tmp/cache/persistent/",
+	"lock" => true,
+	"serialize" => true,
+	"isWindows" => false,
+	"mask" => 436
+)
+$success	=	false</pre><pre class="stack-trace">Cache::write() - CORE/Cake/Cache/Cache.php, line 310
+App::shutdown() - CORE/Cake/Core/App.php, line 871
+[main] - [internal], line ??</pre></div></pre>
